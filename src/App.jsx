@@ -7,7 +7,6 @@ import ReservationsPage from './components/ReservationsPage';
 export default function App() {
   const [time, setTime] = useState('530');
 
-  // for the sake of this simple Reservations project, using App file
   return (
     <ChakraProvider>
       <ReservationsPage time={time} setTime={setTime} />
