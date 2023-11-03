@@ -1,0 +1,35 @@
+{
+  "reservations": [
+    {
+      "id": 1,
+      "date": "2023-11-03",
+      "time": "5:00PM",
+      "available": true
+    },
+    {
+      "id": 2,
+      "time": "5:30PM",
+      "available": true
+    },
+    {
+      "id": 3,
+      "time": "5:45PM",
+      "available": true
+    },
+    {
+      "id": 4,
+      "time": "6:00PM",
+      "available": true
+    },
+    {
+      "id": 5,
+      "time": "6:30PM",
+      "available": true
+    },
+    {
+      "id": 6,
+      "time": "6:45PM",
+      "available": true
+    }
+  ]
+}

@@ -1,42 +1,123 @@
-#root {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding: 20px 60px;
+  height: 100vh;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Universal Text */
+
+h1 {
+  font-size: 42px;
+  color: darkgreen;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ---- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Nav Section */
+
+nav {
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  color: #495e57;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+li a,
+li a:visited {
+  text-decoration: none;
+}
+
+/* Form */
+
+.form-wrapper {
+  width: 250px;
+}
+
+/* Confirmation page */
+.confirmation {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.confirmation h1 {
+  font-size: 42px;
+}
+
+.text__top {
+  display: flex;
+  gap: 10px;
+}
+
+/* Error page */
+.error-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Main */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  gap: 10px;
+}
+
+/* Mobile Nav */
+.mobile-nav {
+  display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 858px) {
+  nav {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  header {
+    justify-content: center;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .main {
+    padding-top: 100px;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .mobile-nav {
+    display: block;
+    padding-right: 10%;
+  }
 }
